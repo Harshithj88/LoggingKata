@@ -44,8 +44,8 @@ namespace LoggingKata
             }
             return new TacoBell //object Initializer
             {
-                Name = items[2],
-                Location = new Point (lat,lon)
+                Name = items[2].Split('.')[0].Replace("/", "").Replace("\"", ""),
+                Location = new Point(lat, lon)
             };
         }
     }
